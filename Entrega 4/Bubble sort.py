@@ -15,4 +15,3 @@ print(medicamentos) #escreve a lista desorganizada
 bubble_sort(medicamentos) #organiza a lista
 
 print(medicamentos) #escreve a lista organizada, pós bubble sort
-                    

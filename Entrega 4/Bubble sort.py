@@ -8,4 +8,11 @@ def bubble_sort(lista):
                     if lista[j] > lista[j+1]:
                            lista[j], lista[j+1] = lista[j+1], lista[j]
 
+medicamentos = ["aspirina", "sbugo", "zeite","jeito","heroi","kauan","diego","terapia"]
+
+print(medicamentos)
+
+bubble_sort(medicamentos)
+
+print(medicamentos)
                     

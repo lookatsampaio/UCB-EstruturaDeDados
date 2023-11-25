@@ -18,5 +18,5 @@ push(carrinho, str('B-Suprin'))
 push(carrinho, str('Gaballon'))
 push(carrinho, str('Halo'))
 push(carrinho, str('Amoxicilina')) #adiciona os items ao carrinho de compra da farmacia
-print("Item retirado: " + pop(carrinho))
-print("Seu carrinho está com os seguintes produtos: " + str(carrinho))
+print("Item retirado: " + pop(carrinho)) #retira o ultimo item e escreve qual item
+print("Seu carrinho está com os seguintes produtos: " + str(carrinho)) #apresenta a atual situação do carrinho (da pilha)

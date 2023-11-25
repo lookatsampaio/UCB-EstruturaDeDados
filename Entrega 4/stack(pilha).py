@@ -1,28 +1,22 @@
-# Creating a pilha
-def create_stack():
-    pilha = []
-    return pilha
-# Creating an empty pilha
-def check_empty(pilha):
-    return len(pilha) == 0
-# Adding items into the pilha
-def push(pilha, item):
-    pilha.append(item)
-    print("pushed item: " + item)
-# Removing an element from the pilha
-def pop(pilha):
-    if (check_empty(pilha)):
-        return "pilha is empty"
+def criar_pilha():# Criar pilha nomeada carrinho
+    carrinho = []
+    return carrinho
+def ta_vazia(carrinho):# Criar pilha vazia pilha
+    return len(carrinho) == 0
+def push(carrinho, item): # Adicionar itens na pilha
+    carrinho.append(item)
+    print("item adicionado: " + item)
+def pop(carrinho):# Remover ultimo elemento da pilha
+    if (ta_vazia(carrinho)):
+        return "pilha ta vazia"
 
-    return pilha.pop()
+    return carrinho.pop()
 
 
-pilha = create_stack()
-push(pilha, str(1))
-push(pilha, str(2))
-push(pilha, str(3))
-push(pilha, str(4))
-push(pilha, str(8))
-push(pilha, str(4))
-print("popped item: " + pop(pilha))
-print("pilha after popping an element: " + str(pilha))
+carrinho = criar_pilha()
+push(carrinho, str('B-Suprin')) 
+push(carrinho, str('Gaballon'))
+push(carrinho, str('Halo'))
+push(carrinho, str('Amoxicilina')) #adiciona os items ao carrinho de compra da farmacia
+print("item adicionado: " + pop(carrinho))
+print("Pilha com o último item retirado: " + str(carrinho))

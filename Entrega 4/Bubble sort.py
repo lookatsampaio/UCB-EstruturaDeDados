@@ -8,11 +8,11 @@ def bubble_sort(lista):
                     if lista[j] > lista[j+1]:
                            lista[j], lista[j+1] = lista[j+1], lista[j]
 
-medicamentos = ["aspirina", "sbugo", "zeite","jeito","heroi","kauan","diego","terapia"]
+medicamentos = ['B-Suprin', 'Gaballon', 'Halo','Kaletra','Labcaína Geleia 2%','Amoxicilina','NEOPet']
 
-print(medicamentos)
+print(medicamentos) #escreve a lista desorganizada
 
-bubble_sort(medicamentos)
+bubble_sort(medicamentos) #organiza a lista
 
-print(medicamentos)
+print(medicamentos) #escreve a lista organizada, pós bubble sort
                     

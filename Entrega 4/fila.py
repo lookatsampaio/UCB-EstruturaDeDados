@@ -12,16 +12,15 @@ class Queue:
 
 
 q = Queue()
-q.enfileirar('Cliente 1')
-q.enfileirar('Cliente 2')
-q.enfileirar('Cliente 3')
-q.enfileirar('Cliente 4')
-q.enfileirar('Cliente 5')#adiciona 5 clientes diferentes na fila
+q.enfileirar('Kaletra')
+q.enfileirar('Labcaína Geleia 2%')
+q.enfileirar('Amoxicilina')
+q.enfileirar('NEOPet')#adiciona os seguintes produtos no carrinho do cliente
 
-print("Clientes da Farmacia na fila:")
+print("Produtos a comprar:")
 q.mostrar()
 
 q.desenfileirar()
 
-print("Cliente atendido!\nAinda na fila:")
+print("Produto registrado na compra!\nA validar:")
 q.mostrar()

@@ -1,23 +1,22 @@
 class Node:
-    # Creating a node
-    def __init__(self, item):
+    def __init__(self, item): # Cria um Node
         self.item = item
         self.next = None
-class LinkedList:
+class LinkedList: #Cria a lista encadeada
     def __init__(self):
         self.head = None
 if __name__ == '__main__':
-    linked_list = LinkedList()
-    # Assign item values
-    linked_list.head = Node(1)
-    second = Node(2)
-    third = Node(3)
-    fourth = Node(4)
-    # Connect nodes
-    linked_list.head.next = second
+    linked_list = LinkedList()      #Insere os elementos (medicamentos) dentro da lista
+    linked_list.head = Node("G500 Balsâmico\n") 
+    second = Node("Gabalgin\n")
+    third = Node("Gabapentina\n")
+    fourth = Node("Gabaneurin\n")
+
+    linked_list.head.next = second #conecta os elemntos da lista
     second.next = third
     third.next = fourth
-    # Print the linked list item
+
+    print("Medicamentos com a Letra G Disponíveis:") #escreve os itens da lista
     while linked_list.head != None:
-        print(linked_list.head.item, end=" ")
+        print(linked_list.head.item, end="")
         linked_list.head = linked_list.head.next

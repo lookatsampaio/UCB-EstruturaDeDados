@@ -7,7 +7,7 @@ class Queue:
         if len(self.queue) < 1:
             return None
         return self.queue.pop(0)
-    def display(self): #escreve a fila
+    def mostrar(self): #escreve a fila
         print(self.queue)
 
 
@@ -19,9 +19,9 @@ q.enfileirar('Cliente 4')
 q.enfileirar('Cliente 5')#adiciona 5 clientes diferentes na fila
 
 print("Clientes da Farmacia na fila:")
-q.display()
+q.mostrar()
 
 q.desenfileirar()
 
 print("Cliente atendido!\nAinda na fila:")
-q.display()
+q.mostrar()

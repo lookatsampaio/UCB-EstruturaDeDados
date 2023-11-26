@@ -1,20 +1,15 @@
 def selectionSort(array, size):
-    for step in range(size):
-        min_idx = step
+    for etapa in range(size):
+        valor_min = etapa
 
-        for i in range(step + 1, size):
-         
-            # to sort in descending order, change > to < in this line
-            # select the minimum element in each loop
-            if array[i] < array[min_idx]:
-                min_idx = i
-         
-        # put min at the correct position
-        (array[step], array[min_idx]) = (array[min_idx], array[step])
+        for i in range(etapa + 1, size):
+            if array[i] < array[valor_min]:        # seleciona o valor minimo encontrado em cada loop
+                valor_min = i
+        (array[etapa], array[valor_min]) = (array[valor_min], array[etapa]) # coloca o valor minimo na posição correta
 
 
-data = [-2, 45, 0, 11, -9]
-size = len(data)
-selectionSort(data, size)
-print('Sorted Array in Ascending Order:')
-print(data)
+Medicamentos = ['Gaballon','Amoxicilina', 'Kaletra', 'Labcaína Geleia 2%', 'Halo']
+size = len(Medicamentos)
+print("Lista atual:\n",Medicamentos) #Lista os Medicamentos como são inseridos
+selectionSort(Medicamentos, size) #realiza a organização através do Selection Sort
+print("\n\Lista organizada:\n", Medicamentos) #Lista os Medicamentos já organizados pela Selection sort

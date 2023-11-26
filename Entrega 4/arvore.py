@@ -25,9 +25,9 @@ root.right = Node('NEOPet') #definimos o produto como o galho direito de B-Supri
 root.left.left = Node('Halo') #definimos o produto como o galho esquerdo de Amoxilina
 root.left.right = Node('Gaballon') #definimos o produto como o galho direito de Amoxilina
 
-print("Da esquerda para direita:\n") #leitura em Inorder Tranversal
+print("Da esquerda para direita:") #leitura em Inorder Tranversal
 esq_dir(root)
-print("\nDo topo para baixo\n") #leitura em Preorder Tranversal
+print("\n\nDo topo para baixo") #leitura em Preorder Tranversal
 top_sub(root)
-print("\nDe baixo para cima\n") #leitura em Postorder Tranversal
+print("\n\nDe baixo para cima") #leitura em Postorder Tranversal
 sub_top(root)

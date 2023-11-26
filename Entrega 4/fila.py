@@ -12,10 +12,10 @@ class Queue:
 
 
 q = Queue()
-q.enfileirar('Kaletra')
-q.enfileirar('Labcaína Geleia 2%')
-q.enfileirar('Amoxicilina')
-q.enfileirar('NEOPet')#adiciona os seguintes produtos no carrinho do cliente
+q.enfileirar("Kaletra")
+q.enfileirar("Labcaína Geleia 2%")
+q.enfileirar("Amoxicilina")
+q.enfileirar("NEOPet") #adiciona os seguintes produtos no carrinho do cliente
 
 print("Produtos a comprar:")
 q.mostrar()

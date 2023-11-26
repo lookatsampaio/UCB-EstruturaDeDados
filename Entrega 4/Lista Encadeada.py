@@ -12,9 +12,11 @@ if __name__ == '__main__':
     linked_list.head = Node(1)
     second = Node(2)
     third = Node(3)
+    fourth = Node(4)
     # Connect nodes
     linked_list.head.next = second
     second.next = third
+    third.next = fourth
     # Print the linked list item
     while linked_list.head != None:
         print(linked_list.head.item, end=" ")

@@ -1,29 +1,27 @@
 class Queue:
     def __init__(self):
         self.queue = []
-    def enqueue(self, item):# Add an element
+    def enfileirar(self, item): #adicionar elemento na fila
         self.queue.append(item)
-    def dequeue(self):# Remove an element
+    def desenfileirar(self):     # remover elemento da fila
         if len(self.queue) < 1:
             return None
         return self.queue.pop(0)
-    def display(self):# Display  the queue
+    def display(self): #escreve a fila
         print(self.queue)
-
-    def size(self):
-        return len(self.queue)
 
 
 q = Queue()
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.enqueue(4)
-q.enqueue(5)
+q.enfileirar('Cliente 1')
+q.enfileirar('Cliente 2')
+q.enfileirar('Cliente 3')
+q.enfileirar('Cliente 4')
+q.enfileirar('Cliente 5')#adiciona 5 clientes diferentes na fila
 
+print("Clientes da Farmacia na fila:")
 q.display()
 
-q.dequeue()
+q.desenfileirar()
 
-print("After removing an element")
+print("Cliente atendido!\nAinda na fila:")
 q.display()

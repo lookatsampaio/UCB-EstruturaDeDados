@@ -5,12 +5,12 @@ def linearSearch(prateleiras, posicaoPrateleira, medicamentoProcurado):
     return -1
 
 #Código Principal
-#
+#Lista medicamentos por prateleira
 prateleiras = ['B-Suprin', 'Gaballon', 'Halo','Kaletra','Labcaína Geleia 2%','AmomedicamentoProcuradoicilina','NEOPet']
-medicamentoProcurado = "NEOPet"
-posicaoPrateleira = len(prateleiras)
-result = linearSearch(prateleiras, posicaoPrateleira, medicamentoProcurado)
-if(result == -1):
-    print("Medicamento não encontrado")
+medicamentoProcurado = "Halo" #Medicamento procurado
+posicaoPrateleira = len(prateleiras) #define o tamanho da prateleira
+prateleiraMedicamento = linearSearch(prateleiras, posicaoPrateleira, medicamentoProcurado)
+if(prateleiraMedicamento == -1):
+    print("Medicamento não encontrado") #Medicamento caso não encontrado, quando a função resulta em "0"
 else:
-    print("Medicamento na prateleira:", result)
+    print("Medicamento na prateleira:", prateleiraMedicamento) #Medicamento encotrado e informa a prateleira em que se encontra

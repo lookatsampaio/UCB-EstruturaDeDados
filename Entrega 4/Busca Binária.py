@@ -1,12 +1,12 @@
-def buscaBinaria(array, medicamentoProcurado, low, high):
-    while low <= high: #repete até que o indicadores maior e o menor se encontrem
-        mid = low + (high - low)//2
+def buscaBinaria(array, medicamentoProcurado, esq, dir):
+    while esq <= dir: #repete até que o indicadores maior e o menor se encontrem, da esquerda para direita
+        mid = esq + (dir - esq)//2
         if array[mid] == medicamentoProcurado:
             return mid
         elif array[mid] < medicamentoProcurado:
-            low = mid + 1
+            esq = mid + 1
         else:
-            high = mid - 1
+            dir = mid - 1
     return -1
 
 #Código principal

@@ -5,7 +5,7 @@ class Node:
 class ListaCircular:
     def __init__(self):
         self.last = None
-    def addVazio(self, data): #adiciona o novo elemnto na lista circular vazia
+    def addVazio(self, data): #adiciona o novo medicamento na lista circular vazia
         if self.last != None:
             return self.last
         novoNode = Node(data)
@@ -13,7 +13,7 @@ class ListaCircular:
         self.last.next = self.last
         return self.last
     
-    def addFrente(self, data):
+    def addFrente(self, data): #adiciona o novo medicamento no começo da lista
         if self.last == None:
             return self.addVazio(data)
         novoNode = Node(data)
@@ -21,7 +21,7 @@ class ListaCircular:
         self.last.next = novoNode
         return self.last
     
-    def addFinal(self, data):
+    def addFinal(self, data): #adiciona o medicamento no final da lista
         if self.last == None:
             return self.addVazio(data)
         novoNode = Node(data)
@@ -30,7 +30,7 @@ class ListaCircular:
         self.last = novoNode
         return self.last
 
-    def addPos(self, data, item):
+    def addPos(self, data, item): #adiciona o medicamento após outro já presente na lista
         if self.last == None:
             return None
         novoNode = Node(data)
@@ -49,7 +49,7 @@ class ListaCircular:
                 print(item, "O medicamento não está presente na lista")
                 break
 
-    def apagar(self, last, key):
+    def apagar(self, last, key): #apagamento o medicamento indicado
         if last == None:
             return
         if (last).data == key and (last).next == last:
@@ -68,7 +68,7 @@ class ListaCircular:
             temp.next = d.next
         return last
     
-    def traverse(self):
+    def listar(self): #lista os medicamentos
         if self.last == None:
             print("A lista está vazia")
             return
@@ -86,8 +86,8 @@ if __name__ == "__main__": #codigo principal
     last = lc.addFrente("Gabapentina") #adiciona o medicamento na primeira posição da lista
     last = lc.addPos("Gabaneurin", "Gabapentina") #adiociona o medicamento após o elemento "Gabantina"
     last = lc.addFinal("Amoxilicina") #adiciona o medicamento na nova posição final da lista
-    lc.traverse()
+    lc.listar()
     last = lc.apagar (last, "Gabapentina")
     print("\nMedicamentos após exclusão:")
-    lc.traverse()
+    lc.listar()
    

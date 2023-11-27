@@ -1,16 +1,16 @@
-def linearSearch(array, n, x):
-    # Going through array sequencially
-    for i in range(0, n):
-        if (array[i] == x):
+def linearSearch(prateleiras, posicaoPrateleira, medicamentoProcurado):
+    for i in range (0, posicaoPrateleira):   #Lê os medicamento sequencialmente
+        if (prateleiras[i] == medicamentoProcurado):
             return i
     return -1
 
-
-array = [2, 4, 0, 1, 9]
-x = 1
-n = len(array)
-result = linearSearch(array, n, x)
+#Código Principal
+#
+prateleiras = ['B-Suprin', 'Gaballon', 'Halo','Kaletra','Labcaína Geleia 2%','AmomedicamentoProcuradoicilina','NEOPet']
+medicamentoProcurado = "NEOPet"
+posicaoPrateleira = len(prateleiras)
+result = linearSearch(prateleiras, posicaoPrateleira, medicamentoProcurado)
 if(result == -1):
-    print("Element not found")
+    print("Medicamento não encontrado")
 else:
-    print("Element found at index: ", result)
+    print("Medicamento na prateleira:", result)
